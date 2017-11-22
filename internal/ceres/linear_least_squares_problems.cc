@@ -714,7 +714,7 @@ bool DumpLinearLeastSquaresProblem(const string& filename_base,
                                    const double* x,
                                    int num_eliminate_blocks) {
   switch (dump_format_type) {
-    case CONSOLE:
+    case TO_CONSOLE:
       return DumpLinearLeastSquaresProblemToConsole(A, D, b, x,
                                                     num_eliminate_blocks);
     case TEXTFILE:

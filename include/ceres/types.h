@@ -377,7 +377,7 @@ enum DumpFormatType {
   // to stderr. The Jacobian is printed as a dense matrix. The vectors
   // D, x and f are printed as dense vectors. This should only be used
   // for small problems.
-  CONSOLE,
+  TO_CONSOLE,
 
   // Write out the linear least squares problem to the directory
   // pointed to by Solver::Options::lsqp_dump_directory as text files

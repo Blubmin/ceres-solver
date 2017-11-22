@@ -121,8 +121,8 @@ TrustRegionStrategy::Summary LevenbergMarquardtStrategy::ComputeStep(
   }
   reuse_diagonal_ = true;
 
-  if (per_solve_options.dump_format_type == CONSOLE ||
-      (per_solve_options.dump_format_type != CONSOLE &&
+  if (per_solve_options.dump_format_type == TO_CONSOLE ||
+      (per_solve_options.dump_format_type != TO_CONSOLE &&
        !per_solve_options.dump_filename_base.empty())) {
     if (!DumpLinearLeastSquaresProblem(per_solve_options.dump_filename_base,
                                        per_solve_options.dump_format_type,

@@ -243,7 +243,7 @@ bool TrustRegionOptionsAreValid(const Solver::Options& options, string* error) {
   }
 
   if (options.trust_region_minimizer_iterations_to_dump.size() > 0 &&
-      options.trust_region_problem_dump_format_type != CONSOLE &&
+      options.trust_region_problem_dump_format_type != TO_CONSOLE &&
       options.trust_region_problem_dump_directory.empty()) {
     *error = "Solver::Options::trust_region_problem_dump_directory is empty.";
     return false;
